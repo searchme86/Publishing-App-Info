@@ -428,3 +428,29 @@ form textarea {
 .contact-button:hover {
   background: var(--hover);
 }
+
+.footer {
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  background: var(--main-color);
+  color: #fff;
+}
+
+.footer h2 {
+  font-size: var(--medium-font);
+  margin-bottom: 1.4rem;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.copyright {
+  padding: 20px;
+  background: var(--main-color);
+  text-align: center;
+  color: #fff;
+}
