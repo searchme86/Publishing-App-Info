@@ -21,16 +21,17 @@
   --p-font: 0.941rem;
 }
 
-section {
+/* section {
   padding: 50px 10%;
-}
+} */
 
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  padding: 18px 10%;
 }
 
-* ::selection {
+*::selection {
   color: var(--bg-color);
   background: var(--main-color);
 }
@@ -45,6 +46,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--bg-color);
+  /* padding: 18px 10%; */
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -174,4 +176,57 @@ header.shadow {
 .scroll-down .bx {
   color: var(--main-color);
   font-size: 24px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: var(--medium-font);
+}
+
+.heading span {
+  font-size: var(--p-font);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.about-img img {
+  width: 80%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.about-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.information {
+  margin: 1rem 0 1.4rem;
+}
+
+.information .info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.information .info-box .bx {
+  font-size: 22px;
+}
+
+.information .info-box span {
+  font-weight: 400;
+  margin-left: 1rem;
 }
