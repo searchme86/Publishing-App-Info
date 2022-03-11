@@ -21,9 +21,9 @@
   --p-font: 0.941rem;
 }
 
-/* section {
-  padding: 50px 10%;
-} */
+section {
+  padding: 50px 0;
+}
 
 body {
   background: var(--bg-color);
@@ -342,4 +342,38 @@ header.shadow {
   color: var(--main-color);
   font-size: var(--p-font);
   font-weight: 500;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio-img {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-img img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
