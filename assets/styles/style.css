@@ -31,6 +31,11 @@ body {
   /* padding: 18px 10%; */
 }
 
+body.active {
+  --bg-color: #0f0c27;
+  --text-color: #fff;
+}
+
 *::selection {
   color: var(--bg-color);
   background: var(--main-color);
@@ -516,5 +521,73 @@ form textarea {
     position: absolute;
     top: 1.4rem;
     right: 2rem;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .home {
+    grid-template-columns: 0.5fr 3fr;
+  }
+
+  .home-text {
+    grid-column: 1/3;
+    padding-left: 2rem;
+  }
+
+  .home-img {
+    order: initial;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  skills-img img {
+    padding-left: 0;
+  }
+
+  .skills-img {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 340px) {
+  :root {
+    --big-font: 1.7rem;
+    --medium-font: 1.1rem;
+  }
+
+  .home-text span {
+    font-size: 1rem;
+  }
+
+  .home-text- h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .information .info-box span {
+    font-size: 1rem;
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fix, minmax(200px, auto));
+  }
+
+  .contact-form form {
+    width: auto;
   }
 }
