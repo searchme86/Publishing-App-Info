@@ -17,14 +17,14 @@ a series of exercise of publishing works(html/css/js) using a open-source of you
 semantic markup structure on User accessibility(w3c)
 
 ## Features
-- responsive to web/mobile
-- flex(no grid)
+- responsible to web/mobile
+- using flex(no grid)
 
 
 ## Browser
-chorme
+- chorme
 
 
 ## Branch description
 - source/raw: raw-source on youtube video 
-- recator/layout :  re-structuring layout
+- refactor/layout :  re-structuring layout
