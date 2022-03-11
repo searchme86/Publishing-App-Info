@@ -377,3 +377,54 @@ header.shadow {
   -ms-transition: 1s;
   -o-transition: 1s;
 }
+
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form input,
+textarea {
+  padding: 12px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  /* width: 100%; */
+  border: none;
+  outline: none;
+  background: hsla(260, 100%, 44%, 0.4);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+form input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+}
+
+form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contact-button {
+  width: 80px;
+  cursor: pointer;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: uppercase;
+}
+
+.contact-button:hover {
+  background: var(--hover);
+}
