@@ -1,0 +1,10 @@
+p {
+  color: 24px;
+  text-align: center;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
