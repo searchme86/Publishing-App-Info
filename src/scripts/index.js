@@ -1,9 +1,5 @@
-import "../assets/styles/style.css";
+// import "../assets/styles/style.css";
 
-console.log("hi");
+import ImageSlider from "./components/slider.js";
 
-let a = 2;
-
-let b = 5;
-
-console.log(a + b);
+const slider = new ImageSlider();
